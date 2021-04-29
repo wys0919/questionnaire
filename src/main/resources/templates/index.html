@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>食品领域科技人才流动问卷调查-结束</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <link rel="shortcut icon" th:href="@{/img/query.jpg}" type="image/x-icon">
+    <link rel="stylesheet" th:href="@{/css/query.css}">
+</head>
+<body>
+<div class="container">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <header>食品领域科技人才流动问卷调查</header>
+    <hr/>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <br>
+    <form th:action="@{/ans}" name="verify" method="post" id="verify">
+<!--        <div style="text-align:center; vertical-align:middle;">-->
+<!--            <input id="ticket_input" name="ticket" type="text" maxlength="4"-->
+<!--                   style="height:75px;width:200px;font-size:50px;text-align:center;color:#00aa00"-->
+<!--                   onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"-->
+<!--            > &nbsp;&nbsp;-->
+<!--        </div>-->
+        <br>
+
+        <!--    按钮    -->
+        <div class="btn">
+            <button id="submit_ticket">进入答题</button>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+    </form>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</body>
+<script th:src="@{/js/query.js}"></script>
+
+
+</html>

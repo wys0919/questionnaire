@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>食品领域科技人才流动问卷调查</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <link rel="shortcut icon" th:href="@{/img/query.jpg}" type="image/x-icon">
+    <link rel="stylesheet" th:href="@{/css/query.css}">
+</head>
+<body>
+<div class="container">
+    <header>食品领域科技人才流动问卷调查</header>
+    <article>&nbsp&nbsp&nbsp&nbsp您好！非常荣幸能够邀请您参加关于“食品领域科技人才流动”的问卷调查，烦请您花3分钟左右答题。
+        获得信息用于本课题研究，感谢您的支持与配合！</article>
+    <br>
+    <hr/>
+    <form th:action="@{/submit}" name="query" method="post" id="form">
+
+        <div id="q01">
+            <label ><strong>您上个工作单位属于？</strong></label> <br>
+            <label for="q01A">
+                <input id="q01A" name="q01" value="A" type="radio" style="zoom:1.5;"/>高校
+            </label> <br>
+            <label for="q01B">
+                <input id="q01B" name="q01" value="B" type="radio" style="zoom:1.5;"/>企业
+            </label> <br>
+            <label for="q01C">
+                <input id="q01C" name="q01" value="C" type="radio" style="zoom:1.5;"/>科研机构
+            </label> <br>
+            <label for="q01D">
+                <input id="q01D" name="q01" value="D" type="radio" style="zoom:1.5;"/>政府机构
+            </label> <br>
+            <label for="q01E">
+                <input id="q01E" name="q01" value="E" type="radio" style="zoom:1.5;"/>其他
+            </label> <br>
+        </div>
+        <p class="blankLine"></p>
+        <hr/>
+        <p class="blankLine"></p>
+
+
+        <!--   -------------------------------------------------------------------------------------------------     -->
+
+
+        <label><strong>这些因素对您工作流动的影响程度</strong></label> <br>
+        <label class="small_label"><strong>(5=非常重要 4=比较重要 3=重要 2=一般 1=不重要)</strong></label> <br>
+        <p class="blankLine"></p>
+
+        <div id="q02">
+            <label class="titleLabel">单位研发设施和经费</label> <br>
+            <label for="q02A" class="numLabel">
+                <input id="q02A" name="q02" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q02B" class="numLabel">
+                <input id="q02B" name="q02" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q02C" class="numLabel">
+                <input id="q02C" name="q02" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q02D" class="numLabel">
+                <input id="q02D" name="q02" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q02E" class="numLabel">
+                <input id="q02E" name="q02" value="1" type="radio" style="zoom:1.5;"/>1
+            </label> <br>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>单位的薪资待遇</label> <br>
+            <label for="q03A" class="numLabel">
+                <input id="q03A" name="q03" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q03B" class="numLabel">
+                <input id="q03B" name="q03" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q03C" class="numLabel">
+                <input id="q03C" name="q03" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q03D" class="numLabel">
+                <input id="q03D" name="q03" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q03E" class="numLabel">
+                <input id="q03E" name="q03" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>单位的绩效奖励</label> <br>
+            <label for="q04A" class="numLabel">
+                <input id="q04A" name="q04" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q04B" class="numLabel">
+                <input id="q04B" name="q04" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q04C" class="numLabel">
+                <input id="q04C" name="q04" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q04D" class="numLabel">
+                <input id="q04D" name="q04" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q04E" class="numLabel">
+                <input id="q04E" name="q04" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>单位提供的行业交流机会</label> <br>
+            <label for="q05A" class="numLabel">
+                <input id="q05A" name="q05" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q05B" class="numLabel">
+                <input id="q05B" name="q05" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q05C" class="numLabel">
+                <input id="q05C" name="q05" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q05D" class="numLabel">
+                <input id="q05D" name="q05" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q05E" class="numLabel">
+                <input id="q05E" name="q05" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>子女的就学地点</label> <br>
+            <label for="q06A" class="numLabel">
+                <input id="q06A" name="q06" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q06B" class="numLabel">
+                <input id="q06B" name="q06" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q06C" class="numLabel">
+                <input id="q06C" name="q06" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q06D" class="numLabel">
+                <input id="q06D" name="q06" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q06E" class="numLabel">
+                <input id="q06E" name="q06" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>配偶的工作地点</label> <br>
+            <label for="q07A" class="numLabel">
+                <input id="q07A" name="q07" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q07B" class="numLabel">
+                <input id="q07B" name="q07" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q07C" class="numLabel">
+                <input id="q07C" name="q07" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q07D" class="numLabel">
+                <input id="q07D" name="q07" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q07E" class="numLabel">
+                <input id="q07E" name="q07" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>单位规模与声望</label> <br>
+            <label for="q08A" class="numLabel">
+                <input id="q08A" name="q08" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q08B" class="numLabel">
+                <input id="q08B" name="q08" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q08C" class="numLabel">
+                <input id="q08C" name="q08" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q08D" class="numLabel">
+                <input id="q08D" name="q08" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q08E" class="numLabel">
+                <input id="q08E" name="q08" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>行业发展水平</label> <br>
+            <label for="q09A" class="numLabel">
+                <input id="q09A" name="q09" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q09B" class="numLabel">
+                <input id="q09B" name="q09" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q09C" class="numLabel">
+                <input id="q09C" name="q09" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q09D" class="numLabel">
+                <input id="q09D" name="q09" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q09E" class="numLabel">
+                <input id="q09E" name="q09" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>单位的工作氛围</label> <br>
+            <label for="q10A" class="numLabel">
+                <input id="q10A" name="q10" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q10B" class="numLabel">
+                <input id="q10B" name="q10" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q10C" class="numLabel">
+                <input id="q10C" name="q10" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q10D" class="numLabel">
+                <input id="q10D" name="q10" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q10E" class="numLabel">
+                <input id="q10E" name="q10" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>单位的人事制度（如竞聘机制、晋升机制等）</label> <br>
+            <label for="q11A" class="numLabel">
+                <input id="q11A" name="q11" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q11B" class="numLabel">
+                <input id="q11B" name="q11" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q11C" class="numLabel">
+                <input id="q11C" name="q11" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q11D" class="numLabel">
+                <input id="q11D" name="q11" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q11E" class="numLabel">
+                <input id="q11E" name="q11" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>地区经济与发展状况</label> <br>
+            <label for="q12A" class="numLabel">
+                <input id="q12A" name="q12" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q12B" class="numLabel">
+                <input id="q12B" name="q12" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q12C" class="numLabel">
+                <input id="q12C" name="q12" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q12D" class="numLabel">
+                <input id="q12D" name="q12" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q12E" class="numLabel">
+                <input id="q12E" name="q12" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>地区环境或地理位置</label> <br>
+            <label for="q13A" class="numLabel">
+                <input id="q13A" name="q13" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q13B" class="numLabel">
+                <input id="q13B" name="q13" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q13C" class="numLabel">
+                <input id="q13C" name="q13" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q13D" class="numLabel">
+                <input id="q13D" name="q13" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q13E" class="numLabel">
+                <input id="q13E" name="q13" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+        <p class="blankLine"></p>
+
+        <hr/>
+        <p class="blankLine"></p>
+        <p class="blankLine"></p>
+
+
+        <!--   -------------------------------------------------------------------------------------------------     -->
+
+
+        <label><strong>您到目前单位后，工作效果提升情况</strong></label> <br>
+        <label class="small_label"><strong>(5=明显提升 4=稍有提升 3=基本没变化 2=稍有下降 1=明显下降)</strong></label> <br>
+        <p class="blankLine"></p>
+        <p class="blankLine"></p>
+
+        <div>
+            <label>工作积极性</label> <br>
+            <label for="q14A" class="numLabel">
+                <input id="q14A" name="q14" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q14B" class="numLabel">
+                <input id="q14B" name="q14" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q14C" class="numLabel">
+                <input id="q14C" name="q14" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q14D" class="numLabel">
+                <input id="q14D" name="q14" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q14E" class="numLabel">
+                <input id="q14E" name="q14" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>发明专利数量</label> <br>
+            <label for="q15A" class="numLabel">
+                <input id="q15A" name="q15" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q15B" class="numLabel">
+                <input id="q15B" name="q15" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q15C" class="numLabel">
+                <input id="q15C" name="q15" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q15D" class="numLabel">
+                <input id="q15D" name="q15" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q15E" class="numLabel">
+                <input id="q15E" name="q15" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>实用新型专利数量</label> <br>
+            <label for="q16A" class="numLabel">
+                <input id="q16A" name="q16" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q16B" class="numLabel">
+                <input id="q16B" name="q16" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q16C" class="numLabel">
+                <input id="q16C" name="q16" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q16D" class="numLabel">
+                <input id="q16D" name="q16" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q16E" class="numLabel">
+                <input id="q16E" name="q16" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>外观设计专利数量</label> <br>
+            <label for="q17A" class="numLabel">
+                <input id="q17A" name="q17" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q17B" class="numLabel">
+                <input id="q17B" name="q17" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q17C" class="numLabel">
+                <input id="q17C" name="q17" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q17D" class="numLabel">
+                <input id="q17D" name="q17" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q17E" class="numLabel">
+                <input id="q17E" name="q17" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>发表论文数量</label> <br>
+            <label for="q18A" class="numLabel">
+                <input id="q18A" name="q18" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q18B" class="numLabel">
+                <input id="q18B" name="q18" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q18C" class="numLabel">
+                <input id="q18C" name="q18" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q18D" class="numLabel">
+                <input id="q18D" name="q18" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q18E" class="numLabel">
+                <input id="q18E" name="q18" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>获得奖项和荣誉</label> <br>
+            <label for="q19A" class="numLabel">
+                <input id="q19A" name="q19" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q19B" class="numLabel">
+                <input id="q19B" name="q19" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q19C" class="numLabel">
+                <input id="q19C" name="q19" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q19D" class="numLabel">
+                <input id="q19D" name="q19" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q19E" class="numLabel">
+                <input id="q19E" name="q19" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>新产品数量</label> <br>
+            <label for="q20A" class="numLabel">
+                <input id="q20A" name="q20" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q20B" class="numLabel">
+                <input id="q20B" name="q20" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q20C" class="numLabel">
+                <input id="q20C" name="q20" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q20D" class="numLabel">
+                <input id="q20D" name="q20" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q20E" class="numLabel">
+                <input id="q20E" name="q20" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>产品合格率和质量</label> <br>
+            <label for="q21A" class="numLabel">
+                <input id="q21A" name="q21" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q21B" class="numLabel">
+                <input id="q21B" name="q21" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q21C" class="numLabel">
+                <input id="q21C" name="q21" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q21D" class="numLabel">
+                <input id="q21D" name="q21" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q21E" class="numLabel">
+                <input id="q21E" name="q21" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>工艺创新、生产流程改进</label> <br>
+            <label for="q22A" class="numLabel">
+                <input id="q22A" name="q22" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q22B" class="numLabel">
+                <input id="q22B" name="q22" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q22C" class="numLabel">
+                <input id="q22C" name="q22" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q22D" class="numLabel">
+                <input id="q22D" name="q22" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q22E" class="numLabel">
+                <input id="q22E" name="q22" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>单位获得政府补贴情况</label> <br>
+            <label for="q23A" class="numLabel">
+                <input id="q23A" name="q23" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q23B" class="numLabel">
+                <input id="q23B" name="q23" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q23C" class="numLabel">
+                <input id="q23C" name="q23" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q23D" class="numLabel">
+                <input id="q23D" name="q23" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q23E" class="numLabel">
+                <input id="q23E" name="q23" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>单位履行环境保护责任情况</label> <br>
+            <label for="q24A" class="numLabel">
+                <input id="q24A" name="q24" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q24B" class="numLabel">
+                <input id="q24B" name="q24" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q24C" class="numLabel">
+                <input id="q24C" name="q24" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q24D" class="numLabel">
+                <input id="q24D" name="q24" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q24E" class="numLabel">
+                <input id="q24E" name="q24" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+        <hr/>
+        <p class="blankLine"></p>
+        <p class="blankLine"></p>
+
+
+        <!--   -------------------------------------------------------------------------------------------------     -->
+
+
+        <label><strong>您对目前工作单位的满意程度</strong></label> <br>
+        <label class="small_label"><strong>(5=非常满意 4=满意 3=基本满意 2=不太满意 1=非常不满意)</strong></label> <br>
+        <p class="blankLine"></p>
+        <p class="blankLine"></p>
+
+        <div>
+            <label>您对目前单位薪资待遇的满意程度</label> <br>
+            <label for="q25A" class="numLabel">
+                <input id="q25A" name="q25" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q25B" class="numLabel">
+                <input id="q25B" name="q25" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q25C" class="numLabel">
+                <input id="q25C" name="q25" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q25D" class="numLabel">
+                <input id="q25D" name="q25" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q25E" class="numLabel">
+                <input id="q25E" name="q25" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>您对目前单位研发条件的满意程度</label> <br>
+            <label for="q26A" class="numLabel">
+                <input id="q26A" name="q26" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q26B" class="numLabel">
+                <input id="q26B" name="q26" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q26C" class="numLabel">
+                <input id="q26C" name="q26" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q26D" class="numLabel">
+                <input id="q26D" name="q26" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q26E" class="numLabel">
+                <input id="q26E" name="q26" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>您对目前职业发展机会的满意程度</label> <br>
+            <label for="q27A" class="numLabel">
+                <input id="q27A" name="q27" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q27B" class="numLabel">
+                <input id="q27B" name="q27" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q27C" class="numLabel">
+                <input id="q27C" name="q27" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q27D" class="numLabel">
+                <input id="q27D" name="q27" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q27E" class="numLabel">
+                <input id="q27E" name="q27" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>您对自己适应目前工作的满意程度</label> <br>
+            <label for="q28A" class="numLabel">
+                <input id="q28A" name="q28" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q28B" class="numLabel">
+                <input id="q28B" name="q28" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q28C" class="numLabel">
+                <input id="q28C" name="q28" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q28D" class="numLabel">
+                <input id="q28D" name="q28" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q28E" class="numLabel">
+                <input id="q28E" name="q28" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>您对目前单位工作氛围的满意程度</label> <br>
+            <label for="q29A" class="numLabel">
+                <input id="q29A" name="q29" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q29B" class="numLabel">
+                <input id="q29B" name="q29" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q29C" class="numLabel">
+                <input id="q29C" name="q29" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q29D" class="numLabel">
+                <input id="q29D" name="q29" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q29E" class="numLabel">
+                <input id="q29E" name="q29" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+
+        <div>
+            <label>您对目前单位管理制度的满意程度</label> <br>
+            <label for="q30A" class="numLabel">
+                <input id="q30A" name="q30" value="5" type="radio" style="zoom:1.5;"/>5
+            </label>
+            <label for="q30B" class="numLabel">
+                <input id="q30B" name="q30" value="4" type="radio" style="zoom:1.5;"/>4
+            </label>
+            <label for="q30C" class="numLabel">
+                <input id="q30C" name="q30" value="3" type="radio" style="zoom:1.5;"/>3
+            </label>
+            <label for="q30D" class="numLabel">
+                <input id="q30D" name="q30" value="2" type="radio" style="zoom:1.5;"/>2
+            </label>
+            <label for="q30E" class="numLabel">
+                <input id="q30E" name="q30" value="1" type="radio" style="zoom:1.5;"/>1
+            </label>
+        </div>
+
+        <p class="blankLine"></p>
+        <hr/>
+        <p class="blankLine"></p>
+        <p class="blankLine"></p>
+
+
+        <!--   -------------------------------------------------------------------------------------------------     -->
+
+
+        <div id="q31">
+            <label><strong>您的性别是？</strong></label> <br>
+            <label for="q31A">
+                <input id="q31A" name="q31" value="A" type="radio" style="zoom:1.5;"/>男
+            </label> <br>
+            <label for="q31B">
+                <input id="q31B" name="q31" value="B" type="radio" style="zoom:1.5;"/>女
+            </label> <br>
+        </div>
+        <p class="blankLine"></p>
+
+        <div id="q32">
+            <label><strong>您的年龄是？</strong></label> <br>
+            <label for="q32A">
+                <input id="q32A" name="q32" value="A" type="radio" style="zoom:1.5;"/>30岁以下(含30)
+            </label> <br>
+            <label for="q32B">
+                <input id="q32B" name="q32" value="B" type="radio" style="zoom:1.5;"/>30-40岁(含40)
+            </label> <br>
+            <label for="q32C">
+                <input id="q32C" name="q32" value="C" type="radio" style="zoom:1.5;"/>40-50岁(含50)
+            </label> <br>
+            <label for="q32D">
+                <input id="q32D" name="q32" value="D" type="radio" style="zoom:1.5;"/>50岁以上
+            </label> <br>
+        </div>
+        <p class="blankLine"></p>
+
+        <div id="q33">
+            <label><strong>您的学历是？</strong></label> <br>
+            <label for="q33A">
+                <input id="q33A" name="q33" value="A" type="radio" style="zoom:1.5;"/>博士
+            </label> <br>
+            <label for="q33B">
+                <input id="q33B" name="q33" value="B" type="radio" style="zoom:1.5;"/>硕士
+            </label> <br>
+            <label for="q33C">
+                <input id="q33C" name="q33" value="C" type="radio" style="zoom:1.5;"/>本科
+            </label> <br>
+            <label for="q33D">
+                <input id="q33D" name="q33" value="D" type="radio" style="zoom:1.5;"/>大专
+            </label> <br>
+            <label for="q33E">
+                <input id="q33E" name="q33" value="E" type="radio" style="zoom:1.5;"/>其他
+            </label> <br>
+        </div>
+        <p class="blankLine"></p>
+
+        <div id="q34">
+            <label><strong>您到本单位工作的时间？</strong></label> <br>
+            <label for="q34A">
+                <input id="q34A" name="q34" value="A" type="radio" style="zoom:1.5;"/>3年以下（含3）
+            </label> <br>
+            <label for="q34B">
+                <input id="q34B" name="q34" value="B" type="radio" style="zoom:1.5;"/>3-5年（含5）
+            </label> <br>
+            <label for="q34C">
+                <input id="q34C" name="q34" value="C" type="radio" style="zoom:1.5;"/>6-10年（含10）
+            </label> <br>
+            <label for="q34D">
+                <input id="q34D" name="q34" value="D" type="radio" style="zoom:1.5;"/>10年以上
+            </label> <br>
+        </div>
+        <p class="blankLine"></p>
+
+        <div id="q35">
+            <label><strong>您目前的技术职称是？</strong></label> <br>
+            <label for="q35A">
+                <input id="q35A" name="q35" value="A" type="radio" style="zoom:1.5;"/>正高级
+            </label> <br>
+            <label for="q35B">
+                <input id="q35B" name="q35" value="B" type="radio" style="zoom:1.5;"/>副高级
+            </label> <br>
+            <label for="q35C">
+                <input id="q35C" name="q35" value="C" type="radio" style="zoom:1.5;"/>中级
+            </label> <br>
+            <label for="q35D">
+                <input id="q35D" name="q35" value="D" type="radio" style="zoom:1.5;"/>初级
+            </label> <br>
+            <label for="q35E">
+                <input id="q35E" name="q35" value="E" type="radio" style="zoom:1.5;"/>其他
+            </label> <br>
+        </div>
+        <p class="blankLine"></p>
+
+        <div id="q36">
+            <label><strong>您在上一单位的技术职称是？</strong></label> <br>
+            <label for="q36A">
+                <input id="q36A" name="q36" value="A" type="radio" style="zoom:1.5;"/>正高级
+            </label> <br>
+            <label for="q36B">
+                <input id="q36B" name="q36" value="B" type="radio" style="zoom:1.5;"/>副高级
+            </label> <br>
+            <label for="q36C">
+                <input id="q36C" name="q36" value="C" type="radio" style="zoom:1.5;"/>中级
+            </label> <br>
+            <label for="q36D">
+                <input id="q36D" name="q36" value="D" type="radio" style="zoom:1.5;"/>初级
+            </label> <br>
+            <label for="q36E">
+                <input id="q36E" name="q36" value="E" type="radio" style="zoom:1.5;"/>其他
+            </label> <br>
+        </div>
+        <p class="blankLine"></p>
+
+        <div id="q37">
+            <label><strong>您工作以来有过几次跨企业（或单位）流动经历？（毕业首次入职为0次）</strong></label> <br>
+            <label for="q37A">
+                <input id="q37A" name="q37" value="A" type="radio" style="zoom:1.5;"/>0次
+            </label> <br>
+            <label for="q37B">
+                <input id="q37B" name="q37" value="B" type="radio" style="zoom:1.5;"/>1次
+            </label> <br>
+            <label for="q37C">
+                <input id="q37C" name="q37" value="C" type="radio" style="zoom:1.5;"/>2次
+            </label> <br>
+            <label for="q37D">
+                <input id="q37D" name="q37" value="D" type="radio" style="zoom:1.5;"/>3次
+            </label> <br>
+            <label for="q37E">
+                <input id="q37E" name="q37" value="E" type="radio" style="zoom:1.5;"/>4次
+            </label> <br>
+            <label for="q37F">
+                <input id="q37F" name="q37" value="F" type="radio" style="zoom:1.5;"/>5次及以上
+            </label> <br>
+        </div>
+        <p class="blankLine"></p>
+
+        <div id="q38">
+            <label><strong>单位的福利待遇对您工作流动的影响程度？</strong></label> <br>
+            <label for="q38A">
+                <input id="q38A" name="q38" value="A" type="radio" style="zoom:1.5;"/>不重要
+            </label> <br>
+            <label for="q38B">
+                <input id="q38B" name="q38" value="B" type="radio" style="zoom:1.5;"/>一般
+            </label> <br>
+            <label for="q38C">
+                <input id="q38C" name="q38" value="C" type="radio" style="zoom:1.5;"/>重要
+            </label> <br>
+            <label for="q38D">
+                <input id="q38D" name="q38" value="D" type="radio" style="zoom:1.5;"/>比较重要
+            </label> <br>
+            <label for="q38E">
+                <input id="q38E" name="q38" value="E" type="radio" style="zoom:1.5;"/>非常重要
+            </label> <br>
+        </div>
+        <p class="blankLine"></p>
+
+        <div id="q39">
+            <label><strong>您目前单位所属的行业是：</strong></label> <br>
+            <label for="q39A">
+                <input id="q39A" name="q39" value="A" type="radio" style="zoom:1.5;"/>粮食加工
+            </label> <br>
+            <label for="q39B">
+                <input id="q39B" name="q39" value="B" type="radio" style="zoom:1.5;"/>水产加工
+            </label> <br>
+            <label for="q39C">
+                <input id="q39C" name="q39" value="C" type="radio" style="zoom:1.5;"/>酿造工业
+            </label> <br>
+            <label for="q39D">
+                <input id="q39D" name="q39" value="D" type="radio" style="zoom:1.5;"/>乳品加工
+            </label> <br>
+            <label for="q39E">
+                <input id="q39E" name="q39" value="E" type="radio" style="zoom:1.5;"/>水果蔬菜加工
+            </label> <br>
+            <label for="q39F">
+                <input id="q39F" name="q39" value="F" type="radio" style="zoom:1.5;"/>饮料冷食制造
+            </label> <br>
+            <label for="q39G">
+                <input id="q39G" name="q39" value="G" type="radio" style="zoom:1.5;"/>肉类加工
+            </label> <br>
+            <label for="q39H">
+                <input id="q39H" name="q39" value="H" type="radio" style="zoom:1.5;"/>食用油脂加工
+            </label> <br>
+            <label for="q39I">
+                <input id="q39I" name="q39" value="I" type="radio" style="zoom:1.5;"/>其他
+            </label> <br>
+        </div>
+        <p class="blankLine"></p>
+
+        <div id="q40">
+            <label><strong>您是个人还是和团队一起调入目前所属单位？</strong></label> <br>
+            <label for="q40A">
+                <input id="q40A" name="q40" value="A" type="radio" style="zoom:1.5;"/>个人
+            </label> <br>
+            <label for="q40B">
+                <input id="q40B" name="q40" value="B" type="radio" style="zoom:1.5;"/>带领团队加入
+            </label> <br>
+            <label for="q40C">
+                <input id="q40C" name="q40" value="C" type="radio" style="zoom:1.5;"/>作为团队成员共同加入
+            </label> <br>
+        </div>
+        <p class="blankLine"></p>
+
+        <div id="q41">
+            <label><strong>您是否获得人才称号？</strong></label> <br>
+            <label for="q41A">
+                <input id="q41A" name="q41" value="A" type="radio" style="zoom:1.5;"/>国家级人才称号
+            </label> <br>
+            <label for="q41B">
+                <input id="q41B" name="q41" value="B" type="radio" style="zoom:1.5;"/>省级人才称号
+            </label> <br>
+            <label for="q41C">
+                <input id="q41C" name="q41" value="C" type="radio" style="zoom:1.5;"/>地市级人才称号
+            </label> <br>
+            <label for="q41D">
+                <input id="q41D" name="q41" value="D" type="radio" style="zoom:1.5;"/>区县级人才称号
+            </label> <br>
+            <label for="q41E">
+                <input id="q41E" name="q41" value="E" type="radio" style="zoom:1.5;"/>无
+            </label> <br>
+        </div>
+        <p class="blankLine"></p>
+
+        <div id="q42">
+            <label><strong>您工作的角色是？</strong></label> <br>
+            <label for="q42A">
+                <input id="q42A" name="q42" value="A" type="radio" style="zoom:1.5;"/>技术为主
+            </label> <br>
+            <label for="q42B">
+                <input id="q42B" name="q42" value="B" type="radio" style="zoom:1.5;"/>管理为主
+            </label> <br>
+            <label for="q42C">
+                <input id="q42C" name="q42" value="C" type="radio" style="zoom:1.5;"/>技术管理并重
+            </label> <br>
+            <label for="q42D">
+                <input id="q42D" name="q42" value="D" type="radio" style="zoom:1.5;"/>其他
+            </label> <br>
+        </div>
+        <p class="blankLine"></p>
+
+        <div id="q43">
+            <label><strong>您的专业背景为：</strong></label> <br>
+            <label for="q43A">
+                <input id="q43A" name="q43" value="A" type="radio" style="zoom:1.5;"/>食品专业
+            </label> <br>
+            <label for="q43B">
+                <input id="q43B" name="q43" value="B" type="radio" style="zoom:1.5;"/>其他理工科专业
+            </label> <br>
+            <label for="q43C">
+                <input id="q43C" name="q43" value="C" type="radio" style="zoom:1.5;"/>经济管理专业
+            </label> <br>
+            <label for="q43D">
+                <input id="q43D" name="q43" value="D" type="radio" style="zoom:1.5;"/>其他
+            </label> <br>
+        </div>
+        <p class="blankLine"></p>
+
+        <div id="q44">
+            <label><strong>您单位的性质是？</strong></label> <br>
+            <label for="q44A">
+                <input id="q44A" name="q44" value="A" type="radio" style="zoom:1.5;"/>国有企业
+            </label> <br>
+            <label for="q44B">
+                <input id="q44B" name="q44" value="B" type="radio" style="zoom:1.5;"/>外资企业
+            </label> <br>
+            <label for="q44C">
+                <input id="q44C" name="q44" value="C" type="radio" style="zoom:1.5;"/>民营企业
+            </label> <br>
+            <label for="q44D">
+                <input id="q44D" name="q44" value="D" type="radio" style="zoom:1.5;"/>混合所有制企业
+            </label> <br>
+            <label for="q44E">
+                <input id="q44E" name="q44" value="E" type="radio" style="zoom:1.5;"/>科研院所
+            </label> <br>
+            <label for="q44F">
+                <input id="q44F" name="q44" value="F" type="radio" style="zoom:1.5;"/>其他
+            </label> <br>
+        </div>
+        <p class="blankLine"></p>
+
+        <div id="q45">
+            <label><strong>您单位的规模？</strong></label> <br>
+            <label for="q45A">
+                <input id="q45A" name="q45" value="A" type="radio" style="zoom:1.5;"/>20人以下
+            </label> <br>
+            <label for="q45B">
+                <input id="q45B" name="q45" value="B" type="radio" style="zoom:1.5;"/>20-299人
+            </label> <br>
+            <label for="q45C">
+                <input id="q45C" name="q45" value="C" type="radio" style="zoom:1.5;"/>300-999人
+            </label> <br>
+            <label for="q45D">
+                <input id="q45D" name="q45" value="D" type="radio" style="zoom:1.5;"/>1000人及以上
+            </label> <br>
+        </div>
+        <p class="blankLine"></p>
+
+        <hr/>
+        <p class="blankLine"></p>
+
+        <!--    按钮    -->
+        <div class="btn">
+            <button id="submitBtn" >提交</button>
+<!--            <button type="reset">重填</button>-->
+        </div>
+    </form>
+
+</div>
+</body>
+<script th:src="@{/js/query.js}"></script>
+</html>
